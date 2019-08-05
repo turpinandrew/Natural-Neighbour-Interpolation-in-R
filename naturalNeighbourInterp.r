@@ -62,6 +62,15 @@ getNNWeights <- function(xs, ys, x, y, plotIt=FALSE) {
 }
 
 ##############################################################
+# xs can be a 3 column matrix of xs,ys,zs or
+# xs,ys,zs are vectors of x y and z values supplied separately.
+#
+# x can be a length 2 vector of the point (x,y) to compute, or
+# x and y can be provided separately.
+#
+# If plotIt is true, the original tiling of the space is plotted in black,
+# and the new tile for the added point (x,y) is plotted in red.
+#
 # Return value for (x,y) interp'ing on (xs,ys,zs)
 ##############################################################
 nnInterp <- function(xs, ys=NULL, zs=NULL, x, y=NULL, plotIt=FALSE) {
